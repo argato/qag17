@@ -9,6 +9,7 @@ import com.codeborne.selenide.Selenide;
 import config.DriverConfig;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class DriverHelper {
@@ -47,7 +48,7 @@ public class DriverHelper {
         addListener("AllureSelenide", new AllureSelenide());
 
         Configuration.timeout = 10000;
-/*
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         if (isRemoteWebDriver()) {
@@ -57,6 +58,6 @@ public class DriverHelper {
         }
 
         Configuration.browserCapabilities = capabilities;
-        */
+
     }
 }
