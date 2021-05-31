@@ -19,7 +19,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 public class TestBaseUI extends TestBase {
 
   @BeforeEach
-  static void setUp() {
+  void setUp() {
     configureDriver();
   }
 
